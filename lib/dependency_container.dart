@@ -81,7 +81,7 @@ class DependencyContainer implements DependencyContainerInterface {
 
   @override
   void registerWithDependencies<T>(
-    Function serviceFactory,
+    ServiceFactory<T> serviceFactory,
     List<Type> dependencies,
   ) {
     _factories[T] = _ServiceWithDependencies(serviceFactory, dependencies);
@@ -89,7 +89,7 @@ class DependencyContainer implements DependencyContainerInterface {
 
   @override
   void registerInterfaceWithDependencies<TB, T extends TB>(
-    Function serviceFactory,
+    ServiceFactory<T> serviceFactory,
     List<Type> dependencies,
   ) {
     _factories[TB] = _ServiceWithDependencies(serviceFactory, dependencies);
@@ -168,7 +168,7 @@ class DependencyContainer implements DependencyContainerInterface {
 }
 
 class _ServiceWithDependencies<T> {
-  final Function serviceFactory;
+  final ServiceFactory<T> serviceFactory;
   final List<Type> dependencies;
 
   _ServiceWithDependencies(

@@ -1,5 +1,5 @@
 name: flutter_catalyst
-version: 1.0.1
+version: 1.0.2
 description: A dependency injection container which also supports autowiring of services.
 homepage: https://github.com/mintware-de/flutter_catalyst
 environment:

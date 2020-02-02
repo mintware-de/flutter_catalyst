@@ -1,3 +1,6 @@
+## 1.0.2
+- Fixed missing usage of ServiceFactory<T>
+
 ## 1.0.1
 
 - pub.dev suggestions implemented
