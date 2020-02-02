@@ -1,3 +1,9 @@
+## 1.0.1
+
+- pub.dev suggestions implemented
+  - [example/README.md](example/README.md) added.
+  - Longer package description added.
+
 ## 1.0.0
 
 - Initial release
