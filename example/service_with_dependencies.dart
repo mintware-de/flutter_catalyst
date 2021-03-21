@@ -42,7 +42,7 @@ main() {
 }
 
 class StackAsAService {
-  List<String> _entries = List<String>();
+  List<String> _entries = <String>[];
 
   void add(String entry) {
     _entries.add(entry);

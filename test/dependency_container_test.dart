@@ -278,7 +278,7 @@ _ExampleService requires the following dependencies which aren't registered:
 abstract class _ExampleServiceInterface {}
 
 class _ExampleService implements _ExampleServiceInterface {
-  final _DependencyService dependency;
+  final _DependencyService? dependency;
 
   _ExampleService({this.dependency});
 }

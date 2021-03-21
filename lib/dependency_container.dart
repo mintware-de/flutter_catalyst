@@ -74,8 +74,8 @@ class DependencyContainer implements DependencyContainerInterface {
   @override
   T getFromToken<T>() {
     return _registrations.values
-        .whereType<InjectionToken>()
-        .firstWhere((t) => t.type == T, orElse: () => null)
+        .whereType<InjectionToken?>()
+        .firstWhere((t) => t?.type == T, orElse: () => null)
         ?.value;
   }
 
@@ -152,7 +152,6 @@ class DependencyContainer implements DependencyContainerInterface {
     _registrations.clear();
     _factories.clear();
 
-    _instance = null;
     _instance = DependencyContainer._ctor();
   }
 
