@@ -1,3 +1,6 @@
+## 2.0.0
+- Null Safety added
+
 ## 1.0.2
 - Fixed missing usage of ServiceFactory<T>
 

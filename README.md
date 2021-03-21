@@ -13,7 +13,7 @@ The flutter_catalyst project is a port of the catalyst project to provide depend
 Add the following to your `pubspec.yaml`:
 ```yaml
 dependencies:
-  flutter_catalyst: ^1.0.0
+  flutter_catalyst: ^2.0.0
 ```
 
 Then run `pub get`

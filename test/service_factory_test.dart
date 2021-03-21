@@ -29,7 +29,7 @@ void main() {
     ServiceFactory<int> sf = (deps) {
       expect(deps[0], TypeMatcher<String>());
       expect(deps[1], TypeMatcher<String>());
-      return int.tryParse(deps[0]) + int.tryParse(deps[1]);
+      return int.parse(deps[0]) + int.parse(deps[1]);
     };
 
     var actual = sf(["2", "3"]);
